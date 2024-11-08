@@ -1,0 +1,17 @@
+---
+import Social from "./Social.astro";
+
+const username = "AdreshSingh";
+const platform = "github";
+---
+
+<footer
+  class="absolute bottom-1 flex justify-evenly bg-gray-800 text-white font-semibold p-2 gap-4 px-10"
+>
+  <p>
+    Learn more about my projects on <Social
+      username={username}
+      platform={platform}
+    />
+  </p>
+</footer>
