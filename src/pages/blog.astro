@@ -1,4 +1,10 @@
 ---
+// importing components
+import Navigation from "../components/navigation.astro";
+import Footer from "../components/footer.astro";
+
+import "../styles/global.css";
+
 const pageTitle = "Blog Page";
 ---
 
@@ -11,11 +17,7 @@ const pageTitle = "Blog Page";
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog/">Blog</a>
-      </nav>
+      <Navigation />
     </header>
     <main>
       <h1>My Astro Learning Blog</h1>
@@ -24,6 +26,7 @@ const pageTitle = "Blog Page";
         <li><a href="/posts/post-2/">Post 2</a></li>
         <li><a href="/posts/post-3/">Post 3</a></li>
       </ul>
-    </main></body
-  >
+    </main>
+    <Footer />
+  </body>
 </html>
