@@ -1,28 +1,11 @@
 ---
-import Navigation from "../components/navigation.astro";
-import Footer from "../components/footer.astro";
-
-// adding global.css styles file
-import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Astro Home Page";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <header>
-      <Navigation />
-    </header>
-    <main>
-      <h1>My First Astro Site 👨‍🚀</h1>
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <main>
+    <h1>My First Astro Site 👨‍🚀</h1>
+  </main>
+</BaseLayout>
