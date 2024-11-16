@@ -43,19 +43,21 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
-  <ul>
-    <!-- {
+  <main class="dark:text-slate-50 p-1">
+    <p>Posts tagged with {tag}</p>
+    <ul>
+      <!-- {
       filteredPosts.map((post) => (
         <li>
           <a href={post.url}>{post.frontmatter.title}</a>
         </li>
       ))
     } -->
-    {
-      posts.map((post) => (
-        <BlogPosts post={post.url} pageTitle={post.frontmatter.title} />
-      ))
-    }
-  </ul>
+      {
+        posts.map((post) => (
+          <BlogPosts post={post.url} pageTitle={post.frontmatter.title} />
+        ))
+      }
+    </ul>
+  </main>
 </BaseLayout>
