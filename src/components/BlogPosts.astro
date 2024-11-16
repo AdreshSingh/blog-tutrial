@@ -1,0 +1,9 @@
+---
+const { post, pageTitle } = Astro.props;
+---
+
+<li
+  class="bg-gray-900 text-slate-300 p-2 m-1 hover:bg-gray-400 hover:text-slate-950 transition-colors duration-150"
+>
+  <a href=`${post}` class="text-lg font-semibold">{pageTitle}</a>
+</li>
