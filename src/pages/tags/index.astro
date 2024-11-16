@@ -14,17 +14,19 @@ const dynamicTags = [
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>Welcome to Home Tag Page</h1>
-  <div class="bg-gray-500 p-4 rounded-md">
-    {
-      dynamicTags.map((tag) => (
-        <a
-          class="px-2 py-3 bg-gray-900 m-1 rounded-md text-blue-300 font-semibold hover:bg-gray-300 hover:text-blue-900"
-          href={`/tags/${tag}`}
-        >
-          {tag}
-        </a>
-      ))
-    }
-  </div>
+  <main class="dark:text-slate-50">
+    <h1>Welcome to Home Tag Page</h1>
+    <div class="bg-gray-500 p-4 rounded-md">
+      {
+        dynamicTags.map((tag) => (
+          <a
+            class="px-2 py-3 bg-gray-900 m-1 rounded-md text-blue-300 font-semibold hover:bg-gray-300 hover:text-blue-900"
+            href={`/tags/${tag}`}
+          >
+            {tag}
+          </a>
+        ))
+      }
+    </div>
+  </main>
 </BaseLayout>
